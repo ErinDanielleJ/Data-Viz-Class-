@@ -67,6 +67,67 @@
 
 <u><h2>Class 3</h2></u>
 <p><p>
+<head> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<div id="article">
+
+</div> 
+
+<script>
+
+function WriteNewsStory(company, symbol, day, quarter, income, city, netincome, pershare, WS, research, earnings, revenue, billion, month, two, three, four, five, twentyeight, percent, SP, fivehundred, one, twentyone, twelve) 
+
+{
+
+if(quarter==3)
+{quarter="third";}
+
+else if (quarter==1)
+{quarter="first";}
+
+else if (quarter==2)
+{quarter="second";}
+
+else if (quarter==4)
+{quarter="fourth";}
+
+var incomepretty; 
+
+if(income>=1000000)
+{incomepretty=income/1000000+"million"}
+
+else {incomepretty=income;}
+
+$ ("#article").append("<p><h3><b> "+company+" beats 3Q profit forecasts</p></h3></b>");
+
+
+$ ("#article").append("<p> "+company+" Inc. ("+symbol+") on "+day+" reported a fiscal "+ quarter+"-quarter net income of $"+incomepretty+" .</p>"); 
+
+$ ("#article").append("<p> On a per-share basis, the "+city+"-based company said it had a net income of "+netincome+" cents. Earnings, adjusted for asset impairment costs, were "+pershare+" cents per share.</p>");
+
+$ ("#article").append("<p> The results topped "+WS+" expectations. The average estimate of eight analysts surveyed by "+research+" Investment Research was for earnings of "+earnings+" cents per share.</p>"); 
+
+$ ("#article").append("<p> The department store operator posted revenue of $"+revenue+" billion in the period, which did not meet Street forecasts. Five analysts surveyed by "+research+" expected $"+billion+" billion.</p>") 
+
+$ ("#article").append("<p> For the current quarter ending in "+month+", "+company+" expects its per-share earnings to range from $"+two+" to $"+three+".</p>") 
+
+$ ("#article").append("<p> The company expects full-year earnings in the range of $"+four+" to $"+five+" per share.</p>"); 
+
+$ ("#article").append("<p> "+company+" shares have decreased "+twentyeight+" "+percent+" since the beginning of the year, while "+SP+" "+fivehundred+" index has increased "+one+" "+percent+". The stock has fallen "+twentyone+" "+percent+" in the last "+twelve+" months.</p>")
+
+}
+
+WriteNewsStory("Macy's", "M", "Wednesday", 3, 118000000, "Cincinnati", 36, 56, "Wall Street", "Zacks", 54, 5.87, 6.15, "January", 2.54, 2.64, 4.20, 4.30, 28, "percent", "Standard & Poor's", 500, 1, 21, 12);
+
+WriteNewsStory("Livid Media", "LM", "Friday", 3, 118000000, "Atlanta", 42, 71, "Wall Street", "Zacks", 32, 7.8, 10.2, "February", 3.16, 3.26, 5.01, 5.11, 12, "percent", "Standard & Poor's", 500, 6, 17, 12);
+
+
+
+</script>
+
+
 <u><h2>Class 4</h2></u>
 <p><p>
 <u><h2>Class 5</h2></u>
